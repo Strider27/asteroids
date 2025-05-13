@@ -37,7 +37,7 @@ def main():
         for asteroid in asteroids:
             for shot in shots:
                 if shot.collisions(asteroid) is True:
-                    asteroid.kill()
+                    asteroid.split()
 
         for d in drawable:
             d.draw(screen)
